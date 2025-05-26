@@ -9,3 +9,15 @@
  *
  * https://refactoring.guru/es/design-patterns/singleton
  */
+
+import { configManager } from './singleton/config-manager.ts';
+
+configManager.setConfig('name', 'John');
+
+console.log(configManager.getConfig('name'));
+
+configManager.setConfig('age', '20');
+
+console.log(configManager.getAllConfig());
+
+
